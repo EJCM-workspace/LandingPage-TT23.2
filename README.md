@@ -11,4 +11,5 @@ Este repositório é dedicado ao desenvolvimento da Landing Page do Treinamento 
 
 
 ## 🔹Objetivo🎯🔹
-A instrução acerca da Landing Page envolve explorar a maioria dos conceitos relativos à HTML, CSS e Javascript.
+A instrução acerca da Landing Page envolve explorar a maioria dos conceitos relativos à HTML, CSS e Javascript para construir
+uma página HTML, estilizá-la e introduzir o funcionamento de Javascript na Web.
