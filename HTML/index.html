@@ -18,54 +18,73 @@
         </div>
     </header>
 
-    <nav>
-        <a href="#">
-            <img src="../img/icon-home.svg" alt="icon">
-        </a>
-        <a href="#">
-            <img src="../img/icon-notificacao.svg" alt="icon">
-        </a>
-        <a href="#">
-            <img src="../img/icon-chat.svg" alt="icon">
-        </a>
-        <a href="#">
-            <img src="../img/icon-configuracao.svg" alt="icon">
-        </a>
-
-    </nav>
-
+    
     <main>
+
+        <nav>
+            <a href="#">
+                <img src="../img/icon-home.svg" alt="icon">
+            </a>
+            <a href="#">
+                <img src="../img/icon-notificacao.svg" alt="icon">
+            </a>
+            <a href="#">
+                <img src="../img/icon-chat.svg" alt="icon">
+            </a>
+            <a href="#">
+                <img src="../img/icon-configuracao.svg" alt="icon">
+            </a>
+        </nav>
+
         <section>
-            <textarea maxlength="150"></textarea>
-
-            <div>
-                <img src="../img/icon-chat.svg" alt="icon">
-                <img src="../img/icon-chat.svg" alt="icon">
-                <img src="../img/icon-chat.svg" alt="icon">
-                <button>Postar</button>
+            <div class="criar-post">
+                <textarea placeholder="No que está pensando...?" maxlength="450"></textarea>
+                <div class="botão-icones">
+                    <div class="icones">
+                        <img src="../img/icon-img.svg" alt="icon">
+                        <img src="../img/icon-emoji.svg" alt="icon">
+                        <img src="../img/icon-link.svg" alt="icon">
+                    </div>
+                    <button>Postar</button>
+                </div>
             </div>
+    
+            <div class="posts">
+                <div class="post">
+                    <img class="img-post" src="../img/img-menina-com-gato.svg" alt="cover">
+                    <div class="post-info">
+                        <div class="user-info">
+                            <img class="img-perfil" src="../img/foto-menina.png" alt="foto-perfil">
+                            <p>@usuário</p>
+                        </div>
+                        <div class="icons">
+                            <img class="icons-post" src="../img/icon-comentarios.svg" alt="">
+                            <img class="icons-post" src="../img/icon-like.svg" alt="">
+                            <img class="icons-post" src="../img/icon-favoritar.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, commodi praesentium deserunt
+                        incidunt
+                        temporibus cupiditate illo eius est, facere officia dolorem ut velit laboriosam quo, asperiores
+                        fugiat
+                        doloribus consequuntur ullam.
+                    </p>    
+                </div>
+            </div>
+        </section> 
 
-        </section>
-
-        <div>
-            <img src="../img/img-menina-com-gato.svg" alt="cover">
-            <div>
-                <img src="../img/foto-menina.png" alt="foto-perfil">
+        <section class="sugestao-perfil">
+            <h2>Pessoas que talvez você conheça</h2>
+            <div style="margin-top: 10px;"> 
+                <img class="img-perfil" src="../img/foto-menina.png" alt="foto-perfil">
                 <p>@usuário</p>
+                <button>Adicionar</button>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, ab repellendus quisquam illum nostrum dolore, aperiam distinctio iusto molestias ea ex sint dolorum suscipit? Accusantium totam iure voluptas similique.</p>
-        </div>
+        </section>
 
     </main>
 
-    <section>
-        <h2>Pessoas que talvez você conheça</h2>
-        <div> 
-            <img src="../img/foto-menina.png" alt="foto-perfil">
-            <p>@usuário</p>
-            <button>Adicionar</button>
-        </div>
-    </section>
 
 </body>
 

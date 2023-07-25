@@ -10,45 +10,319 @@ body{
     background-color: #181B24;
 }
 
-/* ----- HEADER ----- */
+/* ------ HEADER ------ */
 
 header {
     background-color: #14161D;
     height: 95px;
-    *border: solid 2px blue;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-TT {
-    width: 60px;
-    padding-left: 43px;
-    position: relative;
-    top: calc(50% - 30px);
-    vertical-align: middle;
+    vertical-align: middle; /* tira o espaçamento que embaixo da img*/
+    position: absolute;
+    left: 20px; 
 }
 
 header div {
-    display: inline-block;
-    *border: solid 2px red;
-    padding-left: 25px;
-    position: relative;
-    top: calc(50% - 30px)
+    width: 670px;
+    height: 35px;
+    border-radius: 25px;
+    margin-right: 270px;
+    background-color: #1E2026;
+    border: none;
+    outline: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 header input {
-    width: 670px;
+    width: 620px;
     height: 35px;
-    border-radius: 10px;
-    outline: none;
+    border-radius: 25px;
+    background-color: #1E2026;
     border: none;
-    background-color: #1e2026;
-    padding-left: 10px
+    outline: none;
+    color: white;
+    padding-left: 10px;
 }
 
 header div img {
-    width: 25px;
-    *border: solid 2px red;
-    position: relative;
-    left: -50px;
-    top: 8px;
+    width: 25px; 
+}
+
+/* ------ MAIN ------ */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+/* ------ MENU LATERAL ------ */
+
+nav a {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+nav img {
+    width: 32px;
+}
+
+/* ------ MEIO (CRIAR POST + POST) ------ */
+
+/* ------ CRIAR POST ------ */
+
+.criar-post{
+    width: 670px;
+    height: 142px;
+    border: solid 1px #484848;
+    border-radius: 10px;
+    background-color: #181B24;
+    display: flex;
+    flex-direction: column;
+}
+
+.criar-post textarea {
+    width: 650px;
+    background-color: #181B24;
+    height: 60px;
+    margin-top: 23px;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 10px; 
+    resize: none;
+    position: relative; 
+}
+
+textarea::placeholder {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.botão-icones {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px 0px 16px;
+}
+
+main div button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #22A2F2;
+}
+
+main div button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+}
+
+/* ------ POST ------ */
+
+.posts {
+    display: grid;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.post {
+    width: 670px;
+    height: fit-content;
+    border: solid 1px #484848;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-post {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.post-info {
+    height: 35px;
+    width: 500px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons-post{
+    float: right;
+    padding-left: 18px;
+    cursor: pointer;
+}
+
+.img-perfil {
+    width: 35px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 50%; /* forma um círculo */
+}
+
+.post-text{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+/* ------ SUGESTÃO DE PERFIL ------ */
+
+.sugestao-perfil {
+    width: 311px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.sugestao-perfil h2 {
+    font-size: 24px;
+}
+
+.sugestao-perfil p {
+    font-size: 18px;
+    display: inline;
+}
+
+.sugestao-perfil button {
+    float: right;
+    background-color: #222222;
+    border: none;
+    color: #22A2F2 ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sugestao-perfil button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* ------ RESPONSIVIDADE ------ */
+
+@media screen and (max-width: 900px) {
+
+
+    /* ------ HEADER ------ */
+
+header {
+    height: 80px; 
+}
+
+.logo-TT {
+    width: 50px;
+}
+
+header div {
+    width: 300px;
+    border-radius: 25px;
+    margin-right: 0px;
+}
+
+header input {
+    width: 250px;  
+}
+
+header div img {
+    width: 25px; 
+}
+    
+/* ------ MEIO (CRIAR POST + POST) ------ */
+
+/* ------ CRIAR POST ------ */
+
+.criar-post{
+    width: 300px;
+    height: fit-content;
+    border: solid 1px #484848;
+    border-radius: 10px;
+    background-color: #181B24;
+    display: flex;
+    flex-direction: column;
+}
+
+.criar-post textarea {
+    width: 280px;
+}
+
+.botão-icones {
+    margin-bottom: 8px;
+    padding: 0px 8px 0px 8px;
+}
+
+main div button {
+    width: 75px;
+    height: 30px;
+}
+
+/* ------ POST ------ */
+
+.post {
+    width: 300px;
+}
+
+.img-post {
+    width: 200px;
+    height: 200px;
+}
+
+.post-info {
+    width: 200px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.icons-post{
+    width: 20px;
+    padding-left: 4px;
+}
+
+.img-perfil {
+    width: 30px;
+    margin-right: 4px;
+}
+
+.post-text{
+    width: 200px;
+    margin-bottom: 16px;
+    font-size: small;
+}
+    
 }
