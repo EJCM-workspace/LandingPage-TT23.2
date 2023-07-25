@@ -42,13 +42,15 @@ header input {
     outline: none;
     border: none;
     background-color: #1e2026;
-    padding-left: 10px
+    padding-left: 10px;
+    color: white;
 }
 
 header div img {
     width: 25px;
     *border: solid 2px red;
-    position: relative;
-    left: -50px;
-    top: 8px;
+    position: absolute;
+    vertical-align: middle;
+    left: 93%;
+    top: calc(50% - 12.5px)
 }
