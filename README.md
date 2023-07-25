@@ -7,8 +7,9 @@
 Este repositório é dedicado ao desenvolvimento da Landing Page do Treinamento Técnico de 2023.2 ofert
 
 ### Links🔗
-- [Protótipo no Figma]()
-
+- [Protótipo no Figma](https://www.figma.com/file/o0V1qGecp9wdcMarxJuEPe/Site-TT---html%2Fcss-I-e-II?node-id=0%3A1&mode=dev)
+<br/>
+<br/>
 
 ## 🔹Objetivo🎯🔹
 A instrução acerca da Landing Page envolve explorar a maioria dos conceitos relativos à HTML, CSS e Javascript para construir
